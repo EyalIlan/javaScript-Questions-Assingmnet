@@ -1,6 +1,6 @@
 
 
-
+//long row function
 const nb_year = (startYear,Addpercent,comming,endYear) =>{
 
     let numOfYear = 0
@@ -15,6 +15,7 @@ const nb_year = (startYear,Addpercent,comming,endYear) =>{
     return numOfYear
 }
 
-const nb_year = (startYear,Addpercent,comming,endYear) => 
+//short row function
+const nb_year = (startYear,Addpercent,comming,endYear) =>  startYear <  endYear ? 1 + nb_year(startYear + startYear*(Addpercent/100) + comming,Addpercent,comming,endYear): 0
 
 console.log(nb_year(1500000, 2.5, 10000, 2000000))

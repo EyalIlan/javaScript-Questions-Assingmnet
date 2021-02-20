@@ -1,6 +1,6 @@
 
-// use map!!!!!!
 
+//long row function
 const  Bus = (list) =>{
 
     let people = 0
@@ -18,5 +18,7 @@ const  Bus = (list) =>{
    return people
 }
 
-console.log(Bus([[2,3],[2,3],[2,3]]))
- 
+
+//short row function
+let Bus = (list) =>  list.reduce((sum,[f,s])=>sum + f - s,0)
+console.log(Bus([[4,3],[4,3],[2,3]]))
