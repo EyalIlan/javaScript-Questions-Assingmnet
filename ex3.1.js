@@ -15,4 +15,6 @@ const nb_year = (startYear,Addpercent,comming,endYear) =>{
     return numOfYear
 }
 
+const nb_year = (startYear,Addpercent,comming,endYear) => 
+
 console.log(nb_year(1500000, 2.5, 10000, 2000000))

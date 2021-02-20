@@ -1,5 +1,5 @@
 
-
+//long row function
 const Summation = (n) =>{
     
     if(n<0){
@@ -13,6 +13,11 @@ const Summation = (n) =>{
     return sum
 }
 
-let sum = Summation(2)
+
+//short row function
+const Summation = (n) =>( n === 1? 1 : n + Summation(n-1) )
+
+
+let sum = Summation(8)
 
 console.log(sum)
